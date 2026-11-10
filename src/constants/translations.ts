@@ -1,0 +1,172 @@
+export const TRANSLATIONS = {
+  en: {
+    appTitle: "Poisson's Ratio & Elastic Potential Energy Lab",
+    appSubtitle: "",
+    toggleLang: "বাংলা",
+    reset: "Reset",
+    audioOn: "Audio: ON",
+    audioOff: "Audio: OFF",
+    snapRelease: "Release Clamps (Snap-Back)",
+    snapReleaseShort: "Release",
+    oscillating: "Oscillating...",
+    
+    // Left Sidebar
+    sidebarTitle: "Material & Load Controls",
+    presetLabel: "Material Preset",
+    custom: "Custom",
+    appliedForce: "Axial Force (F)",
+    compression: "Compression",
+    tension: "Tension",
+    equilibrium: "Equilibrium",
+    poissonRatio: "Poisson's Ratio (σ)",
+    poissonRangeInfo: "Theoretical limits: -1.0 ≤ σ ≤ 0.5",
+    youngsModulus: "Young's Modulus (Y)",
+    initialLength: "Initial Length (L₀)",
+    initialDiameter: "Initial Diameter (d₀)",
+    dragModeHint: "💡 Pro-Tip: Drag horizontally ↔ on the clamp to change length, and drag vertically ↕ on the wire to change breadth/diameter!",
+    visualAmplification: "Visual Strain Amplification",
+    visualAmpHelp: "Magnifies microscopic strain for stiff materials like Steel so lateral contraction is clearly visible.",
+    
+    // Canvas overlays
+    wallSupport: "Rigid Wall Support",
+    slidingGrip: "Tensile Grip",
+    dragToPull: "Drag right to stretch, left to compress",
+    pullForce: "Tensile Force",
+    pushForce: "Compressive Force",
+    lateralContraction: "Lateral Contraction",
+    lateralExpansion: "Lateral Expansion (Auxetic!)",
+    zeroLateralChange: "Zero Lateral Strain (Cork)",
+    lengthLabel: "Current Length L",
+    diameterLabel: "Current Diameter d",
+    deltaL: "ΔL (Elongation)",
+    deltaD: "Δd (Lateral Δ)",
+    
+    // Right Panel: Energy Tank & Calculations
+    tankTitle: "Elastic Energy Tank (U)",
+    tankSubtitle: "Stored Strain Energy & Fluid Gauge",
+    storedEnergy: "Total Stored Energy (U)",
+    energyDensity: "Energy Density (u)",
+    stress: "Stress (P)",
+    longitudinalStrain: "Longitudinal Strain (ε_L)",
+    lateralStrain: "Lateral Strain (ε_d)",
+    volumeChange: "Volume Change (ΔV/V₀)",
+    poissonCalculated: "Calculated Ratio (σ)",
+    joules: "Joules (J)",
+    joulesPerM3: "J/m³",
+    megaPascals: "MPa",
+    percent: "%",
+    energyFormulaSummary: "U = ½ × Force × ΔL = ½ × Stress × Strain × Volume",
+    
+    // Stress-Strain Curve
+    curveTitle: "Stress vs Strain Curve & Energy Density",
+    curveFormula: "Area under curve = Strain Energy Density u = ½ × σ × ε",
+    curveSlope: "Slope = Young's Modulus (Y)",
+    areaEnergyDensity: "Area = Energy Density (u)",
+    dragCurveHint: "Drag point along curve to stretch/compress",
+    drawerTitle: "HSC Physics Core Concepts & Exam Corner",
+    drawerSubtitle: "NCTB HSC Physics Chapter 7: Structural Properties of Matter",
+    concept1Title: "1. Why is Poisson's ratio (σ) strictly between -1 and 0.5?",
+    concept1Body: "For isotropic 3D solids to be thermodynamically stable, the Bulk Modulus (K) and Shear Modulus (G) must be positive. Since K = Y / [3(1 - 2σ)], if σ > 0.5, volume would decrease under tension, violating positive bulk modulus. Most common solids fall between 0.25 and 0.35; liquids/rubber approach 0.5 (incompressible).",
+    
+    concept2Title: "2. How does the volume of a stretched wire change?",
+    concept2Body: "The fractional change in volume is ΔV / V₀ ≈ ε_L(1 - 2σ). If σ = 0.5 (ideal rubber), ΔV = 0 (constant volume). If 0 ≤ σ < 0.5 (most metals), 1 - 2σ > 0, so volume increases under tension! For cork (σ ≈ 0), volume expands directly proportional to elongation without swelling sideways.",
+    
+    concept3Title: "3. Work Done & Elastic Potential Energy Derivation",
+    concept3Body: "Work done dW = F · dl. Integrating from 0 to l: W = ½ F l = ½ (Y A / L₀) l². Since Stress = F/A and Strain = l/L₀, the stored energy density per unit volume is u = W/V = ½ × Stress × Strain. This energy is stored in the intermolecular electric potential fields.",
+    
+    concept4Title: "4. What is an Auxetic Material (σ < 0)?",
+    concept4Body: "Auxetic metamaterials possess a re-entrant honeycomb cellular structure. When pulled axially, the internal geometric hinges open up laterally, causing the material to expand in diameter rather than necking down! Used in bulletproof vests, artificial blood vessels, and specialized aerospace shock absorbers.",
+    
+    // Challenges
+    challengesTitle: "Quick Lab Experiments",
+    challenge1: "Set Rubber and pull to +1500 N: observe the dramatic thinning of the rod (necking).",
+    challenge2: "Switch to Cork (σ = 0): verify that the diameter d stays virtually unchanged during stretch.",
+    challenge3: "Select Auxetic Metamaterial: pull to tension and watch the rod grow thicker in diameter!",
+    challenge4: "Charge the Energy Tank above 50 J and hit 'Release Clamps' to listen to the oscillation snap!"
+  },
+  bn: {
+    appTitle: "পয়সনের অনুপাত ও বিভব শক্তি ল্যাব",
+    appSubtitle: "",
+    toggleLang: "English",
+    reset: "রিসেট",
+    audioOn: "শব্দ: চালু",
+    audioOff: "শব্দ: বন্ধ",
+    snapRelease: "ক্ল্যাম্প মুক্ত করুন (স্ন্যাপ ব্যাক)",
+    snapReleaseShort: "স্ন্যাপ ব্যাক",
+    oscillating: "দোদুল্যমান...",
+    
+    // Left Sidebar
+    sidebarTitle: "উপাদান ও প্রযুক্ত বল নিয়ন্ত্রণ",
+    presetLabel: "উপাদান প্রিসেট",
+    custom: "কাস্টম",
+    appliedForce: "প্রযুক্ত অক্ষীয় বল (F)",
+    compression: "সংকোচন (Compression)",
+    tension: "প্রসারণ (Tension)",
+    equilibrium: "সাম্যাবস্থা",
+    poissonRatio: "পয়সনের অনুপাত (σ)",
+    poissonRangeInfo: "তাত্ত্বিক সীমা: -১.০ ≤ σ ≤ ০.৫",
+    youngsModulus: "ইয়ং-এর গুণাঙ্ক (Y)",
+    initialLength: "আদি দৈর্ঘ্য (L₀)",
+    initialDiameter: "আদি ব্যাস (d₀)",
+    dragModeHint: "💡 টিপস: ক্ল্যাম্প ডানে-বামে ↔ টেনে দৈর্ঘ্য এবং তারের উপরে-নিচে ↕ টেনে সরাসরি ব্যাস/প্রস্থ পরিবর্তন করতে পারবেন!",
+    visualAmplification: "দৃষ্টিগ্রাহ্য বিকৃতি বিবর্ধন (Amplification)",
+    visualAmpHelp: "ইস্পাতের মতো শক্ত উপাদানে সূক্ষ্ম বিকৃতি ও পার্শ্বীয় সংকোচন সহজে চোখে পড়ার জন্য বিবর্ধিত করে দেখায়।",
+    
+    // Canvas overlays
+    wallSupport: "দৃঢ় প্রাচীর অবলম্বন",
+    slidingGrip: "টান ক্ল্যাম্প গ্রিপ",
+    dragToPull: "টেনে প্রসারিত করতে ডানে, সংকুচিত করতে বামে টানুন",
+    pullForce: "টান বল (Tension)",
+    pushForce: "সংকোচন বল (Compression)",
+    lateralContraction: "পার্শ্বীয় সংকোচন (Necking)",
+    lateralExpansion: "পার্শ্বীয় প্রসারণ (অক্সেটিক!)",
+    zeroLateralChange: "শূন্য পার্শ্ব বিকৃতি (কর্ক)",
+    lengthLabel: "বর্তমান দৈর্ঘ্য L",
+    diameterLabel: "বর্তমান ব্যাস d",
+    deltaL: "দৈর্ঘ্য বৃদ্ধি ΔL",
+    deltaD: "ব্যাস পরিবর্তন Δd",
+    
+    // Right Panel: Energy Tank & Calculations
+    tankTitle: "স্থিতিস্থাপক শক্তি ট্যাংক (U)",
+    tankSubtitle: "সঞ্চিত বিকৃতি শক্তি ও তরল পরিমাপক",
+    storedEnergy: "মোট সঞ্চিত বিভব শক্তি (U)",
+    energyDensity: "শক্তি ঘনত্ব (u)",
+    stress: "পীড়ন (Stress, P)",
+    longitudinalStrain: "দৈর্ঘ্য বিকৃতি (ε_L)",
+    lateralStrain: "পার্শ্ব বিকৃতি (ε_d)",
+    volumeChange: "আয়তন পরিবর্তন হার (ΔV/V₀)",
+    poissonCalculated: "পরিমাপিত পয়সনের অনুপাত (σ)",
+    joules: "জুল (Joules)",
+    joulesPerM3: "J/m³",
+    megaPascals: "MPa",
+    percent: "%",
+    energyFormulaSummary: "U = ½ × বল × ΔL = ½ × পীড়ন × বিকৃতি × আয়তন",
+    
+    // Stress-Strain Curve
+    curveTitle: "পীড়ন বনাম বিকৃতি লেখচিত্র ও শক্তি ঘনত্ব",
+    curveFormula: "লেখচিত্রের ক্ষেত্রফল = শক্তি ঘনত্ব u = ½ × পীড়ন × বিকৃতি",
+    curveSlope: "ঢাল = ইয়ং-এর গুণাঙ্ক (Y)",
+    areaEnergyDensity: "ক্ষেত্রফল = শক্তি ঘনত্ব (u)",
+    dragCurveHint: "লেখচিত্রে বিন্দুটি ডানে-বামে টেনে সরাসরি বিকৃতি পরিবর্তন করুন",
+    drawerTitle: "এইচএসসি বোর্ড প্রস্তুতি ও মূল সূত্রসমূহ (পরীক্ষার জন্য অতীব গুরুত্বপূর্ণ)",
+    drawerSubtitle: "জাতীয় শিক্ষাক্রম ও পাঠ্যপুস্তক বোর্ড (NCTB) পদার্থবিজ্ঞান ১ম পত্র - অধ্যায় ৭: পদার্থের গাঠনিক ধর্ম",
+    concept1Title: "১. পয়সনের অনুপাতের মান কেন সাধারণত -১ থেকে ০.৫ এর মধ্যে থাকে?",
+    concept1Body: "একটি সমসত্ত্ব (isotropic) স্থিতিস্থাপক কঠিন পদার্থের আয়তন গুণাঙ্ক (K) ও ব্যবর্তন গুণাঙ্ক (G) উভয়ই অবশ্যই ধনাত্মক হতে হয়। যেহেতু K = Y / [3(1 - 2σ)], তাই σ > ০.৫ হলে টানলে পদার্থের আয়তন কমে যাবে, যা বাস্তব পদার্থের জন্য অসম্ভব। ব্যবহারিক ক্ষেত্রে অধিকাংশ কঠিন পদার্থের মান ০.২৫ থেকে ০.৩৫ এবং রবারের ক্ষেত্রে ০.৫ এর কাছাকাছি।",
+    
+    concept2Title: "২. একটি তারকে টেনে লম্বা করলে তার আয়তনের কী পরিবর্তন হয়?",
+    concept2Body: "আয়তন পরিবর্তনের হার হলো ΔV / V₀ ≈ ε_L(1 - 2σ)। যদি রবারের মতো σ = ০.৫ হয়, তবে (1 - 2σ) = ০; অর্থাৎ আয়তন পুরোপুরি ধ্রুব থাকে। কিন্তু অধিকাংশ ধাতুর ক্ষেত্রে σ < ০.৫ হওয়ায় (1 - 2σ) > ০, ফলে তারকে টেনে লম্বা করলে মোট আয়তন কিছুটা বৃদ্ধি পায়! আবার কর্কের ক্ষেত্রে σ ≈ ০ হওয়ায় আয়তন দৈর্ঘ্য বৃদ্ধির সমানুপাতে বাড়ে কিন্তু পার্শ্বীয় কোনো স্ফীতি হয় না।",
+    
+    concept3Title: "৩. তারের প্রসারণে কৃতকাজ কীভাবে সঞ্চিত বিভব শক্তিতে রূপান্তরিত হয়?",
+    concept3Body: "প্রযুক্ত বলের বিরুদ্ধে ক্ষুদ্র সরণ dl এর জন্য কৃতকাজ dW = F · dl। ০ থেকে l পর্যন্ত সমাকলন (integration) করলে পাই W = ½ F l = ½ (Y A / L₀) l²। যেহেতু পীড়ন = F/A এবং বিকৃতি = l/L₀, তাই একক আয়তনে সঞ্চিত শক্তি u = W/V = ½ × পীড়ন × বিকৃতি। তারের আন্তঃআণবিক ব্যবধান বৃদ্ধির ফলে আণবিক স্থিতিশক্তি বৃদ্ধি হিসেবে এটি সঞ্চিত হয়।",
+    
+    concept4Title: "৪. মেটাম্যাটেরিয়াল বা অক্সেটিক উপাদান (Auxetic Materials) কী?",
+    concept4Body: "অক্সেটিক উপাদানের অভ্যন্তরে বিশেষ ভাঁজযুক্ত জালিকা (re-entrant honeycomb) কাঠামো থাকে। টান প্রয়োগ করলে এর অভ্যন্তরীণ কোণগুলো খুলে গিয়ে পার্শ্বীয় দিকে সংকুচিত হওয়ার বদলে আরও স্ফীত বা মোটা হয়ে ওঠে! অর্থাৎ এর পয়সনের অনুপাত ঋণাত্মক (σ < ০)। এটি আধুনিক বুলেটপ্রুফ ভেস্ট, কৃত্রিম রক্তনালী এবং শক অ্যাবজরবারে ব্যবহৃত হয়।",
+    
+    // Challenges
+    challengesTitle: "ল্যাব অনুসন্ধানমূলক কার্যক্রম",
+    challenge1: "রবার সিলেক্ট করে +১৫০০ N টান প্রয়োগ করুন: রডটি সরু হয়ে যাওয়ার নাটকীয় পরিবর্তন লক্ষ্য করুন।",
+    challenge2: "কর্ক (σ = ০) সিলেক্ট করুন: টান বা চাপ যাই দেওয়া হোক না কেন ব্যাস d প্রায় অপরিবর্তিত থাকে।",
+    challenge3: "অক্সেটিক মেটাম্যাটেরিয়াল সিলেক্ট করে টানুন: রডটির দৈর্ঘ্য ও ব্যাস উভয়ই একসাথে বাড়ছে দেখুন!",
+    challenge4: "শক্তি ট্যাংকে ৫০ জুলের বেশি শক্তি সঞ্চয় করে 'ক্ল্যাম্প মুক্ত করুন' বাটনে চাপ দিন এবং দোলন ধ্বনি শুনুন।"
+  }
+};

@@ -1,0 +1,6 @@
+{
+  "name": "HSC Physics Lab: Poisson's Ratio & Elastic Potential Energy Studio",
+  "description": "Interactive simulation for HSC Physics exploring Poisson's ratio, elastic potential energy storage, stress-strain, and snap-back oscillations with bilingual Bengali and English support.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
